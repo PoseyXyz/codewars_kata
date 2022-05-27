@@ -19,5 +19,10 @@ Examples
 
 //solution
 function maskify(cc){
-   
+     let unmasked = cc.substr(-4)
+     let masked = ""
+     for (let i=0; i<cc.length-4; i++){
+         masked += "#"
+     }
+     return masked + unmasked   
 }
